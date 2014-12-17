@@ -1,0 +1,17 @@
+<div class="track-item">
+  <div class="flip-container">
+    <div class="flipper">
+      <div class="front">
+        <img src=<%- artwork_url %> onerror="this.src='<%= user.avatar_url %>'">
+      </div>
+      <div class="back" data-id=<%= id %>>
+        <img class="artist-avatar" src=<%= user.avatar_url %>>
+        <i class="fa fa-play-circle-o fa-3x play-new-track"></i>
+      </div>
+    </div>
+  </div>
+  <div class="track-data" data-id=<%= id %>>
+    <span class="artist-name explore-favorites" title=<%= user.username %>><%= user.username %></span>
+    <span class="track-name" title=<%= title %>><%= title %></span>
+  </div>
+</div>
