@@ -9,7 +9,7 @@ define([
     el: '#auth-user-profile',
     template: _.template(tmp),
     events: {
-      'click img': 'viewAuthUserFavs'
+      'click .auth-user': 'viewAuthUserFavs',
     },
     initialize: function(options) {
       this.event_agg = options.event_agg;
