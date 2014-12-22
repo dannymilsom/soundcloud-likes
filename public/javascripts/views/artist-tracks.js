@@ -8,7 +8,7 @@ define([
   var ArtistTracks = Backbone.View.extend({
     el: '#artist-tracks',
     events: {
-      "click img": "playArtistTrack"
+      "click .artist-track": "playArtistTrack"
     },
     initialize: function(options) {
       _.bindAll(this, "newUserFavorites");
@@ -26,7 +26,7 @@ define([
       this.$el.append(trackView.render().el);
     },
     playArtistTrack: function(event) {
-      var model_id = $(event.currentTarget).data("id");
+      var model_id = $(event.currentTarget).children(":first").data("id");
       this.event_agg.trigger("playTrack", this.model.collection.get(model_id));
     },
     newUserFavorites: function(user_id){

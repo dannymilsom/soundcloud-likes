@@ -9,7 +9,7 @@ define([
     el: "#individual-tracks",
     events: {
       "click .explore-favorites": 'fetchFavs',
-      "click .play-new-track": "playTrack"
+      "click .back": "playTrack"
     },
     initialize: function(options) {
       _.bindAll(this, "fetchAuthFavs", "playTrack");
@@ -55,7 +55,7 @@ define([
     },
     playTrack: function(event) {
       // trigger event which updates the user info view
-      var model_id = $(event.currentTarget).parent().data("id");
+      var model_id = $(event.currentTarget).data("id");
       this.event_agg.trigger("playTrack", this.model.collection.get(model_id));
     },
     ajaxStart: function(){

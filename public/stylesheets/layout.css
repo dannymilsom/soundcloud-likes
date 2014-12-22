@@ -40,6 +40,8 @@ li {
 
 #auth-user-profile span { cursor: pointer; }
 
+#auth-user-profile span:hover { color: #CCC; }
+
 #auth-user-profile img {
   width: 24px;
   height: 24px;
@@ -74,6 +76,11 @@ li {
   color: #FFF;
 }
 
+#inner-player i:hover {
+  color: #CCC;
+  cursor: pointer;
+}
+
 #inner-player p { margin: 5px 0; }
 
 #now-playing { 
@@ -96,6 +103,8 @@ li {
   cursor: pointer;
   padding: 0 5px;
 }
+
+#sort-by-filters i:hover { color: #CCC; }
 
 #timeline {
   width: 100%;
@@ -171,7 +180,9 @@ li {
   color: #FFF;
 }
 
-.artist-track img:hover ~ i { visibility:visible; }
+.artist-track:hover > i { visibility: visible; }
+
+.artist-track span { cursor: pointer; }
 
 #artist-info { text-align: center; }
 
@@ -264,7 +275,10 @@ li {
 .back {
   transform: rotateY(180deg);
   position: relative;
+  cursor: pointer;
 }
+
+.back:hover .play-new-track { color: #CCC; }
 
 .back img { opacity: 0.9; }
 
@@ -283,8 +297,6 @@ li {
   left: 15px;
   cursor: pointer;
 }
-
-.play-new-track:hover { color: #CCC; }
 
 .artist-name { padding: 5px 0 0; }
 
