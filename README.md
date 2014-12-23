@@ -28,3 +28,7 @@ Soundcloud-Likes uses JavaScript on both the client and server, including the fo
 ##Contributions
 
 All contributions are welcomed.
+
+##Demo
+
+You can view the demo at [soundcloud-likes.herokuapp.com](http://soundcloud-likes.herokuapp.com/). Simply log in with your soundcloud credentials, and start exploring.
