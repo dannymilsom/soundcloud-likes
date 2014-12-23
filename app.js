@@ -18,4 +18,4 @@ app.get('/callback.html', function (req, res) {
 });
 
 // Listen for requests
-var server = http.listen(process.env.PORT || 8000, function () {});
+var server = http.listen(process.env.PORT || 3000, function () {});
