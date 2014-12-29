@@ -175,10 +175,11 @@ li {
 
 .artist-track i {
   position: absolute;
-  bottom: 15px;
-  left: 32px;
+  bottom: 6px;
+  left: 26px;
   visibility: hidden;
   color: #FFF;
+  cursor: pointer;
 }
 
 .artist-track:hover > i { visibility: visible; }
