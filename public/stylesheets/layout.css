@@ -170,6 +170,7 @@ li {
   float: left;
   display: block;
   margin-right: 5px;
+  box-shadow: 2px 3px 3px #aaa;
 }
 
 .artist-track i {
@@ -204,6 +205,8 @@ li {
 }
 
 #artist-info a:hover { color: #551111; }
+
+.artist-avatar { box-shadow: 3px 3px 3px #aaa; }
 
 .artist-name {
   cursor: pointer;
