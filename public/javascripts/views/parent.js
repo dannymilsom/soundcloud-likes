@@ -29,24 +29,22 @@ define([
         limit: '42'
       };
 
-      // create the models we need to pass to child views
-
-      var artistTracks = new ArtistTrackWrapper({auth_id: options.auth_id});
+      var artistTracks = new ArtistTrackWrapper({auth_id: options.display_user.id});
       artistTracks.collection.fetch({
         data: this.fetch_params
       });
 
-      var tracks = new TrackWrapper({auth_id: options.auth_id});
+      var tracks = new TrackWrapper({auth_id: options.display_user.id});
       tracks.collection.fetch({
         data: this.fetch_params
       });
 
-      var authUser = new User({'id': options.auth_id});
+      var authUser = new User({'id': options.auth_user.id});
       authUser.fetch({
         data: this.fetch_params
       });
 
-      var currentUser = new User({'id': options.auth_id});
+      var currentUser = new User({'id': options.display_user.id});
       currentUser.fetch({
         data: this.fetch_params
       });

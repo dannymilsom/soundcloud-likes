@@ -13,6 +13,9 @@ app.set('view engine', 'jade');
 app.get('/', function (req, res) {
   res.render("index");
 });
+app.get('/artists/*', function (req, res) {
+  res.render("index");
+});
 app.get('/callback.html', function (req, res) {
   res.render("callback");
 });

@@ -16,6 +16,7 @@ define([
       options.event_agg.bind("newUserFavorites", this.newUserFavorites);
       this.model.on('change', this.render, this);
       this.model.on('sync', this.render, this);
+      this.model.on('sync', this.updateURL, this);
     },
     render: function() {
       this.$el.empty();
@@ -33,6 +34,9 @@ define([
     },
     followArtist: function() {
       SC.put('/me/followings/' + this.model.get('id'));
+    },
+    updateURL: function() {
+      this.goTo('artists/' + this.model.get('permalink'), {trigger: true});
     }
   });
 

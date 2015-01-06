@@ -2,7 +2,7 @@ body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   color: #000;
   background-color: #fcfcfc;
-  background-image: url("../images/stripes.jpg");
+  background-image: url("/images/stripes.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -23,7 +23,7 @@ li {
 /***** Now Playing Header *****/
 
 #wrapper {
-  background-image: url("../images/red-grid.jpg");
+  background-image: url("/images/red-grid.jpg");
   position: relative;
   text-align: center;
   color: #FFF;
