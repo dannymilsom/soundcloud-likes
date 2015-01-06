@@ -28,7 +28,7 @@ require(['jquery',
 
   SC.initialize({
     client_id: 'e87aac36d9e13fb628046b2725456585',
-    redirect_uri: 'http://localhost:3000/callback.html'
+    redirect_uri: 'http://soundcloud-likes.herokuapp.com/callback.html'
   });
 
   SC.connect(function() {
